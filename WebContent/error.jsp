@@ -7,6 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<h1>
+		ERROR
+	</h1>
+	<% String error = (String) request.getAttribute("error"); %>
+	<%= error %>
 </body>
 </html>

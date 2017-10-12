@@ -14,7 +14,7 @@
 
 <!-- Bootstrap core CSS -->
 <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
+
 
 <!-- Custom fonts for this template -->
 <link href="vendor/font-awesome/css/font-awesome.min.css"
@@ -31,68 +31,14 @@
 
 <!-- Custom styles for this template -->
 <link href="css/creative.min.css" rel="stylesheet">
-
+<link href="css/style.css" rel="stylesheet">
 </head>
 <script>
 	
 </script>
 <body id="page-top">
 
-	<!-- Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-light fixed-top"
-		id="mainNav">
-	<div class="container">
-		<a class="navbar-brand js-scroll-trigger" href="#page-top">Bao Lau
-			Chia Tay </a>
-		<button class="navbar-toggler navbar-toggler-right" type="button"
-			data-toggle="collapse" data-target="#navbarResponsive"
-			aria-controls="navbarResponsive" aria-expanded="false"
-			aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item"><a class="nav-link js-scroll-trigger"
-					href="#about">About</a></li>
-				<li class="nav-item"><a class="nav-link js-scroll-trigger"
-					href="#services">Services</a></li>
-				<li class="nav-item"><a class="nav-link js-scroll-trigger"
-					href="#portfolio">Help</a></li>
-				<li class="nav-item"><a class="nav-link js-scroll-trigger"
-					href="#contact">Contact</a></li>
-			</ul>
-		</div>
-	</div>
-	</nav>
-
-	<header class="masthead">
-	<div class="header-content">
-		<div class="header-content-inner">
-			<h1 id="homeHeading">DA NANG - Thanh Pho Dang Song</h1>
-			<hr>
-			<p>Thanh Pho Do Thi Loai 1 - Thanh Pho Dang Song - Thanh Pho blah
-				blah blah</p>
-			<a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Tim
-				Hieu</a>
-		</div>
-	</div>
-	</header>
-
-	<section class="bg-primary" id="about">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-8 mx-auto text-center">
-				<h2 class="section-heading text-white">Tu Van Chon Khach San Du
-					Lich Da Nang</h2>
-				<hr class="light">
-				<p class="text-faded">Chung toi mang den cho ban giai phap tien
-					loi, nhanh chong va huu ich trong mua du lich tai TP.Da Nang.</p>
-				<a class="btn btn-default btn-xl js-scroll-trigger" href="#services">Get
-					Started!</a>
-			</div>
-		</div>
-	</div>
-	</section>
+	<jsp:include page="head.jsp"></jsp:include>
 
 	<section id="services">
 	<div class="container">
@@ -112,9 +58,11 @@
 						<h4>Loai Phong:</h4>
 						<h4>
 							<select name="loaiphong">
-								<option value="1">Phong Giuong Doi</option>
-								<option value="2">Phong Giuong Don</option>
-								<option value="3">Phong 2 Giuong Don</option>
+								<option value="1">Phong Giuong Don</option>
+								<option value="2">Phong Giuong Doi</option>
+								<option value="3">Phong Giuong Don + Giuong Doi</option>
+								<option value="5">Phong 2 Giuong Don</option>
+								<option value="6">Phong 2 Giuong Doi</option>
 								<option value="4">Phong Gia Dinh</option>
 							</select>
 						</h4>
@@ -144,7 +92,7 @@
 			<div class="row">
 				<div class="col-lg-2 col-md-6 ">
 					<div class="service-img">
-						<img alt="#" src="img/service/1.jpg">
+						<img alt="#" src="img/info/buffet.jpg">
 					</div>
 					<div class="service-box">
 						<h5>
@@ -155,18 +103,18 @@
 				</div>
 				<div class="col-lg-2 col-md-6 ">
 					<div class="service-img">
-						<img alt="#" src="img/service/1.jpg">
+						<img alt="#" src="img/info/landry.jpg">
 					</div>
 					<div class="service-box">
 						<h5>
-							<input name="wash" type="checkbox"> Giat ui
+							<input name="wash" type="checkbox"> laundry
 						</h5>
 						<p class="text-muted">Dich vu giat ui</p>
 					</div>
 				</div>
 				<div class="col-lg-2 col-md-6 ">
 					<div class="service-img">
-						<img alt="#" src="img/service/1.jpg">
+						<img alt="#" src="img/info/pool.jpg">
 					</div>
 					<div class="service-box">
 						<h5>
@@ -176,7 +124,7 @@
 				</div>
 				<div class="col-lg-2 col-md-6 ">
 					<div class="service-img">
-						<img alt="#" src="img/service/1.jpg">
+						<img alt="#" src="img/info/cafe.jpg">
 					</div>
 					<div class="service-box">
 						<h5>
@@ -186,7 +134,7 @@
 				</div>
 				<div class="col-lg-2 col-md-6 ">
 					<div class="service-img">
-						<img alt="#" src="img/service/1.jpg">
+						<img alt="#" src="img/info/massage.jpg">
 					</div>
 					<div class="service-box">
 						<h5>
@@ -196,7 +144,7 @@
 				</div>
 				<div class="col-lg-2 col-md-6 ">
 					<div class="service-img">
-						<img alt="#" src="img/service/1.jpg">
+						<img alt="#" src="img/info/gym.jpg">
 					</div>
 					<div class="service-box">
 						<h5>
@@ -206,7 +154,7 @@
 				</div>
 				<div class="col-lg-2 col-md-6 ">
 					<div class="service-img">
-						<img alt="#" src="img/service/1.jpg">
+						<img alt="#" src="img/info/tennis.jpg">
 					</div>
 					<div class="service-box">
 						<h5>
@@ -216,7 +164,7 @@
 				</div>
 				<div class="col-lg-2 col-md-6 ">
 					<div class="service-img">
-						<img alt="#" src="img/service/1.jpg">
+						<img alt="#" src="img/info/golf.jpg">
 					</div>
 					<div class="service-box">
 						<h5>
@@ -226,7 +174,7 @@
 				</div>
 				<div class="col-lg-2 col-md-6 ">
 					<div class="service-img">
-						<img alt="#" src="img/service/1.jpg">
+						<img alt="#" src="img/info/souvenir.jpg">
 					</div>
 					<div class="service-box">
 						<h5>
@@ -236,7 +184,7 @@
 				</div>
 				<div class="col-lg-2 col-md-6 ">
 					<div class="service-img">
-						<img alt="#" src="img/service/1.jpg">
+						<img alt="#" src="img/info/entertainment.jpg">
 					</div>
 					<div class="service-box">
 						<h5>
@@ -247,7 +195,7 @@
 				</div>
 				<div class="col-lg-2 col-md-6 ">
 					<div class="service-img">
-						<img alt="#" src="img/service/1.jpg">
+						<img alt="#" src="img/info/bookticket.jpg">
 					</div>
 					<div class="service-box">
 						<h5>
@@ -257,7 +205,7 @@
 				</div>
 				<div class="col-lg-2 col-md-6 ">
 					<div class="service-img">
-						<img alt="#" src="img/service/1.jpg">
+						<img alt="#" src="img/info/booktour.jpg">
 					</div>
 					<div class="service-box">
 						<h5>
@@ -267,7 +215,7 @@
 				</div>
 				<div class="col-lg-2 col-md-6 ">
 					<div class="service-img">
-						<img alt="#" src="img/service/1.jpg">
+						<img alt="#" src="img/info/park.jpg">
 					</div>
 					<div class="service-box">
 						<h5>
@@ -277,7 +225,7 @@
 				</div>
 				<div class="col-lg-2 col-md-6 ">
 					<div class="service-img">
-						<img alt="#" src="img/service/1.jpg">
+						<img alt="#" src="img/info/vehicle.jpg">
 					</div>
 					<div class="service-box">
 						<h5>
@@ -290,122 +238,15 @@
 		<br> <br>
 		<div class="call-to-action bg-dark">
 			<div class="container text-center">
-				<h2>BOOK PHONG!</h2>
+				<h2>Tim Kiem</h2>
 				<input class="btn btn-default btn-xl sr-button" type="submit"
-					value="OK">
+					value="Search">
 			</div>
 		</div>
 	</form>
 	</section>
 
-	<section class="p-0" id="portfolio">
-	<div class="container-fluid">
-		<div class="row no-gutter popup-gallery">
-			<div class="col-lg-4 col-sm-6">
-				<a class="portfolio-box" href="img/portfolio/fullsize/1.jpg"> <img
-					class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
-					<div class="portfolio-box-caption">
-						<div class="portfolio-box-caption-content">
-							<div class="project-category text-faded">Category</div>
-							<div class="project-name">Project Name</div>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<a class="portfolio-box" href="img/portfolio/fullsize/2.jpg"> <img
-					class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
-					<div class="portfolio-box-caption">
-						<div class="portfolio-box-caption-content">
-							<div class="project-category text-faded">Category</div>
-							<div class="project-name">Project Name</div>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<a class="portfolio-box" href="img/portfolio/fullsize/3.jpg"> <img
-					class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
-					<div class="portfolio-box-caption">
-						<div class="portfolio-box-caption-content">
-							<div class="project-category text-faded">Category</div>
-							<div class="project-name">Project Name</div>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<a class="portfolio-box" href="img/portfolio/fullsize/4.jpg"> <img
-					class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
-					<div class="portfolio-box-caption">
-						<div class="portfolio-box-caption-content">
-							<div class="project-category text-faded">Category</div>
-							<div class="project-name">Project Name</div>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<a class="portfolio-box" href="img/portfolio/fullsize/5.jpg"> <img
-					class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
-					<div class="portfolio-box-caption">
-						<div class="portfolio-box-caption-content">
-							<div class="project-category text-faded">Category</div>
-							<div class="project-name">Project Name</div>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<a class="portfolio-box" href="img/portfolio/fullsize/6.jpg"> <img
-					class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
-					<div class="portfolio-box-caption">
-						<div class="portfolio-box-caption-content">
-							<div class="project-category text-faded">Category</div>
-							<div class="project-name">Project Name</div>
-						</div>
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
-	</section>
-
-	<div class="call-to-action bg-dark">
-		<div class="container text-center">
-			<h2>Free Download at Start Bootstrap!</h2>
-			<a class="btn btn-default btn-xl sr-button"
-				href="http://startbootstrap.com/template-overviews/creative/">Download
-				Now!</a>
-		</div>
-	</div>
-
-	<section id="contact">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-8 mx-auto text-center">
-				<h2 class="section-heading">Let's Get In Touch!</h2>
-				<hr class="primary">
-				<p>Ready to start your next project with us? That's great! Give
-					us a call or send us an email and we will get back to you as soon
-					as possible!</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-4 ml-auto text-center">
-				<i class="fa fa-phone fa-3x sr-contact"></i>
-				<p>123-456-6789</p>
-			</div>
-			<div class="col-lg-4 mr-auto text-center">
-				<i class="fa fa-envelope-o fa-3x sr-contact"></i>
-				<p>
-					<a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a>
-				</p>
-			</div>
-		</div>
-	</div>
-	</section>
-
+	<jsp:include page="foot.jsp"></jsp:include>
 	<!-- Bootstrap core JavaScript -->
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/popper/popper.min.js"></script>

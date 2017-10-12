@@ -2,3 +2,12 @@
     width: 150px;
     height: 170px;
 }
+
+img.sizex1 {
+    width: 480px;
+    height: 350px;
+}
+
+img.sizex2 {
+    width: 330px;
+}
